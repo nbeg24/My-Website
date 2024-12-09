@@ -5,42 +5,113 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+    /* Custom background image */
+    .bg-image {
+      background-image: url('/Portfolio img bg.jpg'); /* Replace with your image URL */
+      background-size: cover;
+      background-position: center;
+      opacity: 90%;
+    }
+  </style>
 </head>
-<Header class="flex justify-between bg-black">
-    <h1 class="text-lg text-white">Toyota</h4>
-    <h4 class="text-sm text-white">Vehicles</h4>
-    <h4 class="text-sm text-white">Showroom</h4>
-    <h4 class="text-sm text-white">Career</h4>
-    <h4 class="text-sm text-white">Book a service</h4>
-    <button class="text-sm text-white">Search</button>
+<body class="bg-gray-50">
 
-</Header>
-<body>
+  <!-- Header -->
+  <header class="bg-white shadow-md">
+    <div class="container mx-auto p-4 flex items-center justify-between">
+      <a href="" class="text-3xl font-semibold text-gray-800">Nafisa Mirza Beg</a>
+      <nav>
+        <ul class="flex space-x-6">
+          <li><a href="#" class="text-gray-800 hover:text-blue-600">Home</a></li>
+          <li><a href="#" class="text-gray-800 hover:text-blue-600">About</a></li>
+          <li><a href="#" class="text-gray-800 hover:text-blue-600">Contact</a></li>
+          <li><a href="#" class="text-gray-800 hover:text-blue-600">Cart</a></li>
+          <button class="bg-red-700 text-white py-2 px-6 rounded-md text-lg hover:bg-purple-700 text -mt-2 bold">View my work</button>
+        </ul>
+      </nav>
+    </div>
+  </header>
 
-    <nav class="bg-gray-600 text-white"></nav>
-    <div class="hero flex justify-between"></div>
+  <!-- Hero Section with Background Image -->
+  <section class="bg-image h-screen flex items-center justify-center text-center text-white bg-opacity-50">
+    <div>
+      <h1 class="text-xl font-bold mb-4 text-black">Welcome to my website.</h1>
+      <p class="text-5xl font-bold text-red-500 mb-6">Hi! I am Nafisa Mirza Beg </p>
+      <p class="text-2xl font-semibold mb-4">A passionate Web Developer</p>
+      <a href="#" class="bg-blue-600 hover:bg-orange-700 text-white py-2 px-6 rounded-lg text-lg">Hire Me</a>
+    </div>
+  </section>
+
+  <!-- Description -->
+<div class="bg-lime-50 py-8">
+    <Section class="flex  w-8/12 mx-auto gap-5">
+        <div class="justify-center pt-20 mt-20 py-30 my-30">
+            <p class="font-bold underline text-red-700">About</p>
+            <P class="font-semibold text-gray-700">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore corrupti accusamus autem tenetur provident. Neque facere saepe quidem! Saepe eos aliquid recusandae excepturi culpa nobis repellendus, voluptatum commodi officiis nisi!</P>
+            <button class="bg-red-700 text-white py-2 px-6 rounded-md text-lg hover:bg-purple-700 text mt-4 bold">Click here</button>
+        </div>
+        <div class="mt-10">
+            <img src="Extra-1000.gif" alt="">
+        </div>
     
+      </Section>
+</div>
+  
 
-<p>All new arrival is available now</p><br>
-<p>Reinvent adventure with an all new hybrid experience. The Toyota Corolla Cross brings a whole new meaning to the world of Crossovers.</p>
-<button class="text-red-500">Explore more</button>
-<img src="pexels-aaronmcurtis-119435-(1).gif" alt="">
+  <!-- Product Section -->
+  <section class="container mx-auto py-12 px-6">
+    <h2 class="text-3xl font-semibold text-center mb-8">Projects</h2>
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
+      <!-- Product Card 1 -->
+      <div class="bg-white shadow-md rounded-lg overflow-hidden">
+        <img src="Untitled-3.gif" alt="Product 1" class="w-full h-48 object-cover">
+        <div class="p-4">
+          <h3 class="text-xl font-semibold">Wordpress</h3>
+          <p class="text-gray-600 mt-2">$900</p>
+          <button class="mt-4 bg-blue-600 text-white py-2 px-6 rounded-lg w-full">Add to Cart</button>
+        </div>
+      </div>
+      
+      <!-- Product Card 2 -->
+      <div class="bg-white shadow-md rounded-lg overflow-hidden">
+        <img src="Untitled-3.gif" alt="Product 2" class="w-full h-48 object-cover">
+        <div class="p-4">
+          <h3 class="text-xl font-semibold">Graphycs design</h3>
+          <p class="text-gray-600 mt-2">$900</p>
+          <button class="mt-4 bg-blue-600 text-white py-2 px-6 rounded-lg w-full">Add to Cart</button>
+        </div>
+      </div>
+      
+      <!-- Product Card 3 -->
+      <div class="bg-white shadow-md rounded-lg overflow-hidden">
+        <img src="Untitled-3.gif" alt="Product 3" class="w-full h-48 object-cover">
+        <div class="p-4">
+          <h3 class="text-xl font-semibold">Javascript</h3>
+          <p class="text-gray-600 mt-2">$1100</p>
+          <button class="mt-4 bg-blue-600 text-white py-2 px-6 rounded-lg w-full">Add to Cart</button>
+        </div>
+      </div>
 
-<p>Wonderfully Hyrbid</p>
-<p>Experience an eco-friendly driving experience and excellent fuel-efficiency with 1.8-liter engine paired with an electric motor system that produces a combined output of 122 PS.</p>
-<button>Explore more</button>
-<img src="pexels-mikebirdy-100656-(1).gif" alt="">
+      <!-- Product Card 4 -->
+      <div class="bg-white shadow-md rounded-lg overflow-hidden">
+        <img src="Untitled-3.gif" alt="Product 4" class="w-full h-48 object-cover">
+        <div class="p-4">
+          <h3 class="text-xl font-semibold">Python</h3>
+          <p class="text-gray-600 mt-2">$1200</p>
+          <button class="mt-4 bg-blue-600 text-white py-2 px-6 rounded-lg w-full">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+  </section>
 
+  <!-- Footer -->
+  <footer class="bg-gray-800 text-white py-6">
+    <div class="container mx-auto text-center">
+      <p>Address: Banasree, Dhaka</p>
+    </div>
+  </footer>
 
-
-</body>
-
-<Footer>
-
-
-</Footer>
-
-<body>
-    
 </body>
 </html>
+
